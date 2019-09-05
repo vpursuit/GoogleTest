@@ -1,5 +1,5 @@
 //
-// Created by Trebing, Peter on 03.09.19.
+// Created by Trebing, Peter on 05.09.19.
 //
 
 #include <iostream>
@@ -8,3 +8,4 @@
 TEST(GTTest, SimpleAssert){
     ASSERT_TRUE(true);
 }
+

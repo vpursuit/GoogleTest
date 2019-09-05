@@ -4,7 +4,20 @@ project(googletest_test)
 include_directories(./googletest/googletest/include)
 set(CMAKE_CXX_STANDARD 17)
 
-link_directories(./googletest/build/lib)
-add_executable(googletest_test main.cpp)
+################################
+# Main
+################################
+add_executable(googletest_test src/main.cpp)
+target_link_libraries(googletest_test)
 
-target_link_libraries(googletest_test gtest gtest_main pthread)
+################################
+# Unit Tests
+################################
+link_directories(./googletest/build/lib)
+
+# Add test cpp file
+add_executable( runUnitTests src/test/CheckoutTest.cpp)
+
+# Link test executable against gtest & gtest_main
+target_link_libraries(runUnitTests gtest gtest_main pthread)
+add_test( runUnitTests runUnitTests )
