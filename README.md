@@ -4,6 +4,8 @@ A showcase howto
 - add googletest as git submodul
 - configure CMakeList.txt
 - use it in Clion
+- create some simple functional test using TEST_F (CheckoutTest.cpp)
+- make use of mock object and expectations (Mocktest.cpp)
 
 # Build instructions
 ````
