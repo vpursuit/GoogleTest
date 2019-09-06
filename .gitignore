@@ -40,6 +40,8 @@ CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+build/
+xcode-build/
 
 
 # Mongo Explorer plugin
